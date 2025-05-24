@@ -8,8 +8,11 @@
 </template>
 
 <script lang="ts" setup>
+import type { NavigationMenuItem } from '@nuxt/ui'
+
 const route = useRouter()
-const navigationItems: NavigationMenuItem[] = [
+
+const navigationItems= ref<NavigationMenuItem[]>([
    {
     label: 'Home',
     icon: 'i-lucide-house',
@@ -22,6 +25,6 @@ const navigationItems: NavigationMenuItem[] = [
     to: '/contact',
     active: computed(() => route.currentRoute.value.path === '/contact').value,
    },
-]
+])
 
 </script>
