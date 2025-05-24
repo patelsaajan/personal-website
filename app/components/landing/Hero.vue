@@ -17,8 +17,21 @@
         <span class="text-4xl"> Just a person who <span class="text-primary font-bold">loves</span> creating.</span>
         <span class="text-md max-w-lg">I'm a self-taught developer with a Master's in Engineering. I’ve spent the past two years building responsive, user-focused websites while working professionally in custom development.</span>
         <div class="flex flex-row gap-8 justify-center">
-            <UButton variant="outline" color="neutral" class="rounded-full font-neutral font-bold py-2 px-4">Download CV</UButton>
-            <UButton variant="outline" color="neutral" class="bg-neutral border-white font-bold text-white rounded-full py-2 px-4">Get In Touch</UButton>
+            <UButton
+                variant="outline" 
+                color="neutral" 
+                class="rounded-full font-neutral font-bold py-2 px-4"
+                to="/contact"
+            >
+                Get In Touch
+            </UButton>
+            <UButton 
+                variant="outline" 
+                color="neutral" 
+                class="bg-neutral border-white font-bold text-white rounded-full py-2 px-4"
+            >
+                Download CV
+            </UButton>
         </div>
         <span class="text-lg font-bold text-primary">Experienced With</span>
         <div class="flex flex-row gap-2 justify-center">
