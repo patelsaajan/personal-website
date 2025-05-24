@@ -5,13 +5,6 @@
                 src="/images/hero.jpg" 
                 alt="Saajan Patel"
                 class="w-52 h-52 rounded-full border-4 border-primary"
-                :&hover="{
-                    scale: 1.05,
-                    transition: {
-                        duration: 0.3,
-                        ease: 'easeInOut'
-                    }
-                }"
                 />
         </div>
         <span class="text-4xl"> Just a person who <span class="text-primary font-bold">loves</span> creating.</span>
@@ -20,7 +13,7 @@
             <UButton
                 variant="outline" 
                 color="neutral" 
-                class="rounded-full font-neutral font-bold py-2 px-4"
+                class="rounded-full font-neutral font-bold py-2 px-4 text-neutral"
                 to="/contact"
             >
                 Get In Touch

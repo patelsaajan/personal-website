@@ -1,6 +1,6 @@
 <template>
+    <LayoutNavigationBar />
     <div class="bg-neutral h-screen w-screen text-white">
-        <LayoutNavigationBar />
         <slot />
     </div>
 </template>

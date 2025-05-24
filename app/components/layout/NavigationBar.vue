@@ -1,30 +1,24 @@
 <template>
    <UNavigationMenu 
-        color="primary"
-        variant="link" 
-        :items="navigationItems" 
-        class="w-full justify-center z-10 text-white"
+     color="primary"
+     variant="link" 
+     :items="navigationItems" 
+     class="w-full justify-center z-10 text-white"
    />
-</template>
-
-<script lang="ts" setup>
-import type { NavigationMenuItem } from '@nuxt/ui'
-
-const route = useRouter()
-
-const navigationItems= ref<NavigationMenuItem[]>([
+ </template>
+ 
+ <script lang="ts" setup>
+ const navigationItems = [
    {
-    label: 'Home',
-    icon: 'i-lucide-house',
-    to: '/',
-    active: computed(() => route.currentRoute.value.path === '/').value,
+     label: 'Home',
+     icon: 'i-lucide-house',
+     to: '/'
    },
    {
-    label: 'Contact',
-    icon: 'i-lucide-book-open',
-    to: '/contact',
-    active: computed(() => route.currentRoute.value.path === '/contact').value,
-   },
-])
-
-</script>
+     label: 'Contact',
+     icon: 'i-lucide-book-open',
+     to: '/contact'
+   }
+ ]
+ </script>
+ 
