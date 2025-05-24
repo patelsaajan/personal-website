@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+    --ui-primary: red;
+    --color-neutral: #000000;
+}
+
+@utility container {
+    padding-inline: 20px;
+}
