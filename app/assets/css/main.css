@@ -2,8 +2,9 @@
 @import '@nuxt/ui';
 
 @theme {
-    --ui-primary: red;
-    --color-neutral: #000000;
+    --ui-primary: #CE2029;
+    --color-primary: #CE2029;
+    --color-neutral: #1a1a1a;
 }
 
 @utility container {

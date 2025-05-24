@@ -1,7 +1,6 @@
 <template>
-    <div class="bg-neutral h-screen w-screen text-white">
-        <LayoutNavigationBar />
-        <slot />
+    <div>
+        <h1>Hello Contact</h1>
     </div>
 </template>
 
