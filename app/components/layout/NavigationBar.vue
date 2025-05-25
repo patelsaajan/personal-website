@@ -3,7 +3,7 @@
      color="primary"
      variant="link" 
      :items="navigationItems" 
-     class="w-full justify-center z-10 text-white"
+     class="w-full justify-center z-10"
    />
  </template>
  
@@ -11,13 +11,19 @@
  const navigationItems = [
    {
      label: 'Home',
-     icon: 'i-lucide-house',
-     to: '/'
+     icon : 'i-lucide-house',
+     to   : '/'
    },
    {
      label: 'Contact',
-     icon: 'i-lucide-book-open',
-     to: '/contact'
+     icon : 'i-lucide-book-open',
+     to   : '/contact'
+   },
+   {
+    label: 'Recipes',
+    icon : 'uil:diary',
+    to: 'https://soyboy.saajanpatel.co.uk',
+    
    }
  ]
  </script>

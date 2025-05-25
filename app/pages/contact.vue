@@ -5,7 +5,7 @@
 
             <UForm :state="state" :schema="schema" @submit="handleSubmit" class="flex flex-col gap-4">
                 <UFormField name="name" label="Name">
-                    <UInput v-model="state.name" class="w-full" icon="i-lucide-user" placeholder="Name" />
+                    <UInput v-model="state.name" class="w-full text-black " icon="i-lucide-user" placeholder="Name" />
                 </UFormField>
                 <UFormField name="email" label="Email">
                     <UInput v-model="state.email" class="w-full" icon="i-lucide-at-sign" placeholder="Enter your email" />
