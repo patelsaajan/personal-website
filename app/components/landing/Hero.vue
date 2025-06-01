@@ -8,7 +8,7 @@
                 />
         </div>
         <span class="text-4xl"> Just a person who <span class="text-primary font-bold">loves</span> creating.</span>
-        <span class="text-md max-w-lg">I'm a self-taught developer with a Master's in Engineering. I’ve spent the past two years building responsive, user-focused websites while working professionally in custom development.</span>
+        <span class="text-md max-w-lg mx-auto">I'm a self-taught developer with a Master's in Engineering. I’ve spent the past two years building responsive, user-focused websites while working professionally in custom development.</span>
         <div class="flex flex-row gap-8 justify-center">
             <UButton
                 variant="outline" 
@@ -36,7 +36,7 @@
             <Icon name="lineicons:php" size="40" />
             <Icon name="hugeicons:sql" size="40" />
         </div>
-        <span class="text-md max-w-lg">I love solving problems through design and code, and I’m always building new projects to learn and explore ideas.</span>
+        <span class="text-md max-w-lg mx-auto">I love solving problems through design and code, and I’m always building new projects to learn and explore ideas.</span>
     </div>
 </template>
 
