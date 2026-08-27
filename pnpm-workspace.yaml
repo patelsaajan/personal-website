@@ -1,0 +1,8 @@
+allowBuilds:
+  esbuild: true
+  vue-demi: true
+  workerd: true
+minimumReleaseAgeExclude:
+  - miniflare@5.20260826.0-alpha
+  - resend@6.24.0
+  - wrangler@4.127.0

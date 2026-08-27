@@ -1,11 +1,6 @@
 import { contactFormSchema } from '~/schemas/contactForm'
 
 export default defineEventHandler(async (event) => {
-  const { Resend } = await import('resend')
-  const resend = new Resend(process.env.RESEND_API_KEY)
-  const FROM_EMAIL = process.env.RESEND_FROM_EMAIL
-  const TO_EMAIL = process.env.RESEND_TO_EMAIL
-
   const body = await readBody(event)
 
   if (body.lastName) return { success: false, error: 'Bot detected' }
@@ -14,6 +9,11 @@ export default defineEventHandler(async (event) => {
   if (!parsed.success) return { success: false, error: parsed.error.format() }
 
   const { name, email, phone, subject, message } = parsed.data
+
+  const { Resend } = await import('resend')
+  const resend = new Resend(process.env.RESEND_API_KEY)
+  const FROM_EMAIL = process.env.RESEND_FROM_EMAIL
+  const TO_EMAIL = process.env.RESEND_TO_EMAIL
 
   try {
     const data = await resend.emails.send({
