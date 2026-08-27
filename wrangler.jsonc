@@ -10,11 +10,9 @@
   },
   "observability": {
     "enabled": true
-  }
-  // Disabled until the old DNS records on the apex are removed,
-  // re-enable to attach the custom domains on deploy.
-  // "routes": [
-  //   { "pattern": "saajanpatel.co.uk", "custom_domain": true },
-  //   { "pattern": "www.saajanpatel.co.uk", "custom_domain": true }
-  // ]
+  },
+  "routes": [
+    { "pattern": "saajanpatel.co.uk", "custom_domain": true },
+    { "pattern": "www.saajanpatel.co.uk", "custom_domain": true }
+  ]
 }
