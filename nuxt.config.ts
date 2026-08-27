@@ -12,6 +12,10 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   modules: ['@nuxt/image', '@nuxt/ui'],
+  ui: {
+    // The site is light-only, so never follow the OS dark mode preference
+    colorMode: false
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   }
