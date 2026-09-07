@@ -104,6 +104,14 @@ useHead({
   title: 'Contact'
 })
 
+useSeoMeta({
+  description: 'Get in touch with Saajan Patel about projects, collaborations or anything else.',
+  ogTitle: 'Contact ~ Saajan Patel',
+  ogDescription: 'Get in touch with Saajan Patel about projects, collaborations or anything else.',
+  twitterTitle: 'Contact ~ Saajan Patel',
+  twitterDescription: 'Get in touch with Saajan Patel about projects, collaborations or anything else.'
+})
+
 const showForm = ref(true)
 const submittedName = ref('')
 const submittedEmail = ref('')
