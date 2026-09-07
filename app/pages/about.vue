@@ -1,14 +1,14 @@
 <template>
     <div class="mt-12 flex flex-col gap-8 justify-center max-w-2xl mx-auto">
       <h1>About Me</h1>
-      <span class="relative after:absolute after:top-0 after:left-0 after:size-full after:bg-primary/15">
+      <span class="relative">
         <NuxtImg
             fit="cover"
-            src="/images/asia.jpeg"
-            height="700"
+            src="/images/saajan.webp"
+            height="900"
             width="900"
             preload
-            class="w-full sm:w-[750px] aspect-3/2 object-cover rounded"
+            class="w-full sm:w-[750px] aspect-square object-cover rounded"
         />
       </span>
       <span class="text-justify">I’m a software developer with a background in engineering, passionate about creating flexible, user-friendly web solutions. I enjoy working on projects that help small businesses bring their stories to life and showcase their work in a way that captures attention and supports growth. Working across WordPress, Vue, React, and PHP, I build websites, custom plugins, and web apps that are reliable, scalable, and designed to make complex tasks feel simple.</span>
@@ -23,7 +23,7 @@
       <h2>Work Experience</h2>
         <UTimeline
             color="primary"
-            :default-value="4"
+            :default-value="5"
             :items="workItems"
             size="2xl"
             :ui="{ 
@@ -32,14 +32,14 @@
              }"
           />
       <h2>Education</h2>
-      <span class="relative after:absolute after:top-0 after:left-0 after:size-full after:bg-secondary/5">
+      <span class="relative">
         <NuxtImg
             fit="cover"
-            src="/images/graduation.jpg"
-            height="700"
+            src="/images/graduation.webp"
+            height="900"
             width="900"
             loading="lazy"
-            class="w-full sm:w-[750px] aspect-3/2 object-cover rounded"
+            class="w-full sm:w-[750px] aspect-square object-cover rounded"
         />
       </span>
       <span class="text-justify">My engineering education taught me to think beyond simply solving a problem—considering why the problem exists, how it impacts people, and what long-term solutions are most effective. I was drawn to this field not just for the technical challenge, but because I’m people-focused and motivated to create solutions that make a positive difference, including contributing to sustainability and protecting the environment. Through hands-on projects and internships, I learned to combine technical skill with thoughtful design, ensuring that solutions are practical, impactful, and responsible.</span>
@@ -62,7 +62,21 @@ useHead({
   title: 'About'
 })
 
+useSeoMeta({
+  description: 'Who Saajan Patel is: developer, builder and graduate, with a timeline of work and education so far.',
+  ogTitle: 'About ~ Saajan Patel',
+  ogDescription: 'Who Saajan Patel is: developer, builder and graduate, with a timeline of work and education so far.',
+  twitterTitle: 'About ~ Saajan Patel',
+  twitterDescription: 'Who Saajan Patel is: developer, builder and graduate, with a timeline of work and education so far.'
+})
+
 const workItems = ref<TimelineItem[]>([
+  {
+    date: 'Jan 2026 – Present',
+    title: 'Founder - SMF Studio',
+    description: 'Founded a web studio building bespoke websites and web apps for small businesses, handling everything from design and development through to deployment.',
+    icon: 'lucide:rocket'
+  },
   {
     date: 'Aug 2024 – Jan 2026',
     title: 'Developer - Hoppstudio',

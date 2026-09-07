@@ -6,10 +6,10 @@
                 v-if="showHero"
                 class="flex w-full justify-end mt-8"
             >
-              <span class="relative after:absolute after:top-0 after:left-0 after:size-full after:bg-primary/15">
+              <span class="relative">
                   <NuxtImg
                       fit="cover"
-                      src="/images/asia.jpeg"
+                      src="/images/saajan.webp"
                       height="700"
                       width="900"
                       preload
