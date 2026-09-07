@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2026-09-07',
   devtools: { enabled: true },
   nitro: {
     preset: 'cloudflare_module',
